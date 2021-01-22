@@ -4,6 +4,6 @@ title:  "Homepage Photos!"
 ---
 
 {% for photo in site.photos %}
-  <h2>{{ staff_member.names }} - {{ staff_member.fileLocation }}</h2>
-  <p>{{ staff_member.content | markdownify }}</p>
+  <h2>{{ photo.names }} - {{ photo.fileLocation }}</h2>
+  <p>{{ photo.content | markdownify }}</p>
 {% endfor %}
