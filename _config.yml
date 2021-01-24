@@ -18,16 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Family Photos
+#email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Click on year to view photos
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+#twitter_username: jekyllrb
+#github_username:  jekyll
 
 # Build settings
 theme: minima
@@ -39,8 +37,8 @@ gallery:
   dir: photos               # Path to the gallery
   symlink: false            # false: copy images into _site. true: create symbolic links (saves disk space)
   title: "Photos"           # Title for gallery index page
-  title_prefix: "Photos: "  # Title prefix for gallery pages. Gallery title = title_prefix + gallery_name
-  sort_field: "date_time"   # How to sort galleries on the index page.
+  title_prefix: ""  # Title prefix for gallery pages. Gallery title = title_prefix + gallery_name
+  sort_field: "title"   # How to sort galleries on the index page.
                             # Possible values are: title, date_time, best_image
   thumbnail_size:
     x: 400                  # max width of thumbnails (in pixels)
