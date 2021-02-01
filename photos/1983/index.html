@@ -55,28 +55,34 @@
   position: absolute;
   top: 0px;
   bottom: 0px;
-  max-height: 100%;
-  max-width: 100%;
+  max-height: 75%;
+  max-width: 75%;
 }
 </style>
 <h1><a href="/photos">1983</a></h1>
 <hr />
+<ul id="results-container"></ul>
 
     <div class="gallery-image-wrapper">
+        
+        <h4>Erica</h4>
         <a name="Erica.jpg"></a>
-        <a href="Erica.jpg">
-            <img class="gallery-image" src="thumbs/Erica.jpg" />
+        <a href="Erica.jpg" rel="lightbox[Erica.jpgLeon.jpg]">
+            <img class="gallery-image" src="thumbs/Erica.jpg" data-downloadable="true"/>
         </a>
     </div>
 
     <div class="gallery-image-wrapper">
+        
+        <h4>Leon</h4>
         <a name="Leon.jpg"></a>
-        <a href="Leon.jpg">
-            <img class="gallery-image" src="thumbs/Leon.jpg" />
+        <a href="Leon.jpg" rel="lightbox[Erica.jpgLeon.jpg]">
+            <img class="gallery-image" src="thumbs/Leon.jpg" data-downloadable="true"/>
         </a>
     </div>
 
-
+<script type="text/javascript" src="/js/lightbox.js"></script>
+<link rel="stylesheet" href="/css/lightbox.css">
   </div>
 
 </article>
