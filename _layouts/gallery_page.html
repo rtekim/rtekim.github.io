@@ -1,0 +1,35 @@
+---
+layout: page
+---
+<style TYPE="text/css">
+.gallery-image-wrapper {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  margin: 1em;
+  position: relative;
+}
+.gallery-image {
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  max-height: 75%;
+  max-width: 75%;
+}
+</style>
+<h1><a href="/{{ site.gallery.dir }}">{{ page.title }}</a></h1>
+<hr />
+<ul id="results-container"></ul>
+{% for image in page.images %}
+    <div class="gallery-image-wrapper">
+        {% assign filename = image.name | split: "." %}
+        <h4>{{filename[0]}}</h4>
+        <a name="{{ image.name }}"></a>
+        <a href="{{ image.name }}" rel="lightbox[{{ page.images }}]">
+            <img class="gallery-image" src="thumbs/{{ image.name }}" data-downloadable="true"/>
+        </a>
+    </div>
+{% endfor %}
+<script type="text/javascript" src="/js/lightbox.js"></script>
+<link rel="stylesheet" href="/css/lightbox.css">
